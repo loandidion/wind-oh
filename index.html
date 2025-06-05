@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wind,oh - Global Wind Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-interface">
+        <div class="title">wind,oh</div>
+        
+        <div id="loadingState" class="loading">
+            discovering global wind patterns...
+        </div>
+        
+        <div id="locationsGrid" class="locations-grid" style="display: none;">
+            <!-- Locations will be populated here -->
+        </div>
+        
+        <div id="controls" class="controls" style="display: none;">
+            <button id="refreshBtn" class="control-btn">🔄 refresh locations</button>
+            <button id="clearBtn" class="control-btn">⊘ clear all</button>
+        </div>
+        
+        <div id="statusDisplay" class="status-display" style="display: none;">
+            <span id="activeCount">0</span> cities contributing to the wind symphony
+        </div>
+        
+        <div id="errorState" class="error" style="display: none;"></div>
+    </div>
+    
+    <div class="master-controls">
+        <button id="masterPlayBtn" class="master-btn">▶ start listening</button>
+        <button id="masterPauseBtn" class="master-btn" style="display: none;">⏸ pause</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
